@@ -1,0 +1,6 @@
+__pycache__/
+.env
+*.pyc
+dbt/your_dbt_project/target/
+dbt/your_dbt_project/dbt_modules/
+.airflow/

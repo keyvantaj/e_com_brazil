@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c3fbc356-d263-4028-af04-50ea08129bfa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/Desktop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/airflow/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/airflow/dags/air_ingest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/airflow/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/airflow/scripts/ingest_csv_files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/olist_customers_dataset.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/olist_geolocation_dataset.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/olist_order_items_dataset.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/olist_order_payments_dataset.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/olist_order_reviews_dataset.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/olist_orders_dataset.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/olist_products_dataset.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/olist_sellers_dataset.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/product_category_name_translation.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbt/profiles.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbt/your_dbt_project/dbt_project.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbt/your_dbt_project/models/my_model.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbt/your_dbt_project/models/staging/schema.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbt/your_dbt_project/models/staging/stg_my_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python_scripts/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python_scripts/custom_etl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python_scripts/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projet-simplon/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projet-simplon/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projet-simplon/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projet-simplon/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projet-simplon/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projet-simplon/.idea/projet-simplon.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projet-simplon/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projet-simplon/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projet-simplon/analyse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projet-simplon/architecure.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projet-simplon/data/magasins.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projet-simplon/data/produits.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projet-simplon/data/ventes.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projet-simplon/db/db.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projet-simplon/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projet-simplon/import_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projet-simplon/schema_sql.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projet-simplon/simplon.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pyspark.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pyspark_delta_lake.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.idea/pythonProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.ipynb_checkpoints/breast_cancer-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.ipynb_checkpoints/comprehensive-data-exploration-with-python-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.ipynb_checkpoints/customer-segmentation-clustering-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.ipynb_checkpoints/customers_segmentation-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.ipynb_checkpoints/diabetes-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.ipynb_checkpoints/iris-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.ipynb_checkpoints/kaggle_btc_prediction-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.ipynb_checkpoints/numpy_matrix_operations-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.ipynb_checkpoints/pgp_encryption_example-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.ipynb_checkpoints/spark_example-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.ipynb_checkpoints/step-by-step-diabetes-classification-knn-detailed-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.ipynb_checkpoints/suicide-in-the-twenty-first-century-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.ipynb_checkpoints/unicorn-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/.idea/Crypto.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/Trash/ascending_triangle_1h.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/Trash/ascending_triangle_4h.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/Trash/deep_falling_channel_4h.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/Trash/deep_rising_channel_1h.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/Trash/entry.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/Trash/exit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/Trash/falling_channel_1h.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/Trash/falling_channel_4h.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/Trash/falling_wedge_1h.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/Trash/falling_wedge_4h.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/Trash/macd_divergence_1h.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/Trash/macd_divergence_4h.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/Trash/momentum_4h.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/Trash/resistance_breakout_1day.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/Trash/rising_channel_4h.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/Trash/rising_triangle_4h.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/Trash/scan.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/close_all.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/digestion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/entry.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/keys/key1.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/keys/key2.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/keys/key3.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/keys/key4.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/keys/key5.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/keys/key6.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/keys/key7.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/modern-webbing-292814-0408b89fb494.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/modules/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/modules/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/modules/db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/modules/execution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/modules/pattern_rec_candles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/modules/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/pairs/stable_coins.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/populate_pairs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/quarantine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/scan.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/strategies/deep_rising_channel_1h.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/strategies/momentum_1h.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/streams.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Crypto/update.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Examples/Bank Marketing Campaign-Opening a Term Deposit/bank-marketing-campaign-opening-a-term-deposit.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Examples/Bank Marketing Campaign-Opening a Term Deposit/bank.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Examples/Housing/.ipynb_checkpoints/comprehensive-data-exploration-with-python-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Examples/Housing/.ipynb_checkpoints/stacked-regressions-top-4-on-leaderboard-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Examples/Housing/comprehensive-data-exploration-with-python.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Examples/Housing/stacked-regressions-top-4-on-leaderboard.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Examples/Housing/test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Examples/Housing/train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Examples/Marketing/.ipynb_checkpoints/customer-segmentation-clustering-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Examples/Marketing/.ipynb_checkpoints/my_code-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Examples/Marketing/customer-segmentation-clustering.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Examples/Marketing/marketing_campaign.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Examples/Marketing/my_code.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Examples/breast_cancer.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Examples/diabetes.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Examples/diabetes.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Examples/iris.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Examples/step-by-step-diabetes-classification-knn-detailed.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Examples/suicide-in-the-twenty-first-century.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Examples/who_suicide_statistics.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Naive Bayes/.ipynb_checkpoints/naive-bayes-classifier-in-python-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Naive Bayes/adult.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Naive Bayes/naive-bayes-classifier-in-python.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/.ipynb_checkpoints/29 - Modelisation-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/02 - Variables et Fonctions.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/03 - Structures de Controles.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/04 - Structures de données (Listes et Tuples).ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/05 - Dictionnaires.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/06 - List Comprehension.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/07 - Built-in Functions.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/08 - Modules de Bases.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/09 - Programmation Orientée Objet.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/10 - Numpy (les Bases).ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/11 - Numpy : Indexing, Slicing, Boolean Indexing.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/12 - Numpy Maths et Statistiques.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/13 - Numpy Broadcasting.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/14 - Matplotlib (les Bases).ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/15 - Matplotlib Top Graphiques.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/16 - Scipy.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/17 - Pandas (les Bases).ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/18 - Pandas et Séries Temporelles.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/19 - Seaborn.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/20 - Sklearn (les Bases).ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/21 - Sklearn : Model Selection.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/22 - Sklearn Pre-processing.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/23 - Sklearn Feature Selection.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/24 - Sklearn : Apprentissage Non-supervisé.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/25 - Sklearn Ensemble Learning.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/27 - Exploratory Data Analysis.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/28 - Prétraitement de données (Corrigé).ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/29 - Modelisation.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/Bonus : Pipelines Composites.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/Bonus : Sklearn Imputers.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/Dataset/BTC-EUR.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/Dataset/ETH-EUR.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/Dataset/bacteria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/Dataset/dataset.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/Dataset/dataset.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/Dataset/titanic3 (3).xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/a44b56ece3ebb026e0570867e56a5b89-ce2b83cf42bd9db85b781024a084c2aa87d100d7.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Python-Machine-Learning-master/chi1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Quantitative-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Quantitative-master/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Quantitative-master/.idea/Quantitative-master.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Quantitative-master/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Quantitative-master/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Quantitative-master/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Quantitative-master/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Quantitative-master/End_of_Script.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Quantitative-master/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Quantitative-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Quantitative-master/alpha_research.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Quantitative-master/modules/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Quantitative-master/modules/account.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Quantitative-master/modules/factorize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Quantitative-master/modules/feature_weights.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Quantitative-master/modules/optimizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Quantitative-master/modules/risk_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Quantitative-master/modules/utils_s.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Quantitative-master/output/optimal_weights_regularized.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Quantitative-master/portfolio_management.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Quantitative-master/quant.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/.idea/Unicorn.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/.ipynb_checkpoints/market_cap-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/.ipynb_checkpoints/unicorn-Copy1-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/.ipynb_checkpoints/unicorn-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/close_positions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/filter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/filter_bis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/functions_limit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/isolated_quant_marketcap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/keys/key1.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/keys/key2.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/keys/key3.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/keys/key4.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/keys/key5.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/keys/key6.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/keys/key7.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/maintain.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/market_cap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/modules/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/modules/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/modules/db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/modules/execution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/modules/pattern_rec_candles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/modules/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/pairs/quant.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/pairs/stable_coins.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/pairs/symbols.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/quant.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/quant_bis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/quarantine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/scan.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/strategies/bb_bands.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/strategies/filter_5d_capm.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/strategies/filter_all.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/strategies/filter_alpha.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/strategies/filter_capm.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/strategies/filter_deviation.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/strategies/filter_ichimoku.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/strategies/super_trend.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/strategies/super_trend_5d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/stream.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/streams.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/tunning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/Unicorn/unicorn.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/.idea/Unicorn.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/.ipynb_checkpoints/market_cap-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/.ipynb_checkpoints/unicorn-Copy1-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/.ipynb_checkpoints/unicorn-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/alpha_factors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/alpha_trend_bot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/alpha_trend_bot_print_v2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/btc_score.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/cdp_api_key.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/cross_quant.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/cross_quant_bis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/cross_quant_optimized.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/daily_report_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/dashboard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/dashboard_binance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/dashboard_functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/dashboard_v2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/dashboard_v3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/corr.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/daily_vector.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/df_cme.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/df_daily.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/df_fvg_breaker.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/df_fvg_daily.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/df_fvg_h1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/df_fvg_h4.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/df_fvg_intersect_ob_daily_fvg_daily.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/df_fvg_intersect_ob_daily_fvg_weekly.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/df_fvg_intersect_ob_h1_fvg_daily.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/df_fvg_intersect_ob_h1_fvg_h1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/df_fvg_intersect_ob_h1_fvg_h4.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/df_fvg_intersect_ob_h1_fvg_weekly.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/df_fvg_intersect_ob_h4_fvg_daily.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/df_fvg_intersect_ob_h4_fvg_h4.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/df_fvg_intersect_ob_h4_fvg_weekly.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/df_fvg_weekly.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/df_h1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/df_h4.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/df_monthly.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/df_weekly.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/dxy.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/futur_time.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/h1_vector.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/h4_vector.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/high_stops_daily.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/high_stops_monthly.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/high_stops_weekly.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/intersect_resistance_daily.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/intersect_resistance_h4.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/intersect_support_daily.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/intersect_support_h4.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/low_stops_daily.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/low_stops_monthly.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/low_stops_weekly.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/nas.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/ob_daily.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/ob_h1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/ob_hourly.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/ob_weekly.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/order_book.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/resistance.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/resistance_daily.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/resistance_h1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/resistance_h4.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/support.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/support_daily.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/support_h1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/support_h4.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/trend_daily.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/uncorr.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/uncorr_.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/uncorr_concat.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/vpr_df_daily.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/vpr_df_h1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/vpr_df_h4.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/data/vpr_df_weekly.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/filled_orders.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/fvg_ob_stops_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/generator_v01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/generator_v02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/gpr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/imbalance_reversal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/keys/key1.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/keys/key2.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/keys/key3.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/keys/key4.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/keys/key5.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/keys/key6.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/keys/key7.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/modules/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/modules/account.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/modules/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/modules/db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/modules/execution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/modules/factors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/modules/optimizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/modules/pattern_rec_candles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/modules/risk_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/modules/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/oco_fvg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/oco_kucoin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/oco_orders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/order_book_trend_vpr_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/pipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/price_functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/scan_capm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/strategies/1h_squeezed_divergence_params.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/strategies/1h_strategy_params.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/strategies/1h_td_sequential_params.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/strategies/4h_alpha_trend_params.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/strategies/4h_td_sequential_params.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/strategies/alpha_trend_params.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/strategies/squeezed_mom_params.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/strategy_ifvg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/strategy_v01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/strategy_v02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/stream.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/streams.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/tmux.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ/tradingview.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/.idea/Unicorn.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/.ipynb_checkpoints/market_cap-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/.ipynb_checkpoints/unicorn-Copy1-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/.ipynb_checkpoints/unicorn-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/alpha_factors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/btc_score.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/close_all_positions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/cross_quant.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/cross_quant_bis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/cross_quant_optimized.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/increase_positions_limit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/keys/key1.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/keys/key2.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/keys/key3.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/keys/key4.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/keys/key5.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/keys/key6.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/keys/key7.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/modules/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/modules/account.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/modules/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/modules/db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/modules/execution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/modules/factors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/modules/optimizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/modules/pattern_rec_candles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/modules/risk_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/modules/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/monitoring.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/monitroing_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/oco_orders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/pattern.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/pipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/quant_ta.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/scan_capm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/scan_selected_alpha.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/scan_top_marketcap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/strategies/bb_bands.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/strategies/rsi_divergence.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/stream.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/streams.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/test_limit_buy_order.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/UnicornQ_all/tradingview.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/encryption/Unicorn.tar.xz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/encryption/encrypt_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/encryption/encrypted_Unicorn.tar.xz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/encryption/modules/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/encryption/modules/encrypt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/encryption/mykey.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/flask/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/flask/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/flask/coinview/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/flask/coinview/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/flask/coinview/backtest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/flask/coinview/keys/key1.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/flask/coinview/keys/key2.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/flask/coinview/keys/key3.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/flask/coinview/keys/key4.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/flask/coinview/keys/key5.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/flask/coinview/keys/key6.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/flask/coinview/keys/key7.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/flask/coinview/pairs/quant.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/flask/coinview/pairs/universe_filter_capm.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/flask/coinview/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/flask/coinview/static/chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/flask/coinview/ta.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/flask/coinview/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/flask/rsibot/bot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/flask/rsibot/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/flask/rsibot/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/kaggle_btc_prediction.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/management-mandate.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/my-visualization-cheat-sheet-v-3/.ipynb_checkpoints/My_visualization_cheat_sheet-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/my-visualization-cheat-sheet-v-3/My_visualization_cheat_sheet.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/numpy_matrix_operations.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/pgp_encryption_example.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/Candles_Strike-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/Comptabilité-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/Comptabilité_Realized_PNL_Kucoin-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/Correlation-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/Fred_Economics-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/Jensen_alpha-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/Order_Book-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/Polynomial-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/Quant_SoftAlpha_Neutral_Universe_Capm_Deployed-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/Quant_SoftAlpha_Neutral_Universe_Capm_all_parameters-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/Quant_SoftAlpha_Neutral_Universe_FilterZscore_000-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/Quant_SoftAlpha_Neutral_Universe_FilterZscore_Optimized-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/Risk_Management-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/TA_AT_SQUEEZED_MOM-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/TA_AT_SQUEEZED_MOM_opt_params-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/TA_Alpha_Trend_Strategy-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/TA_Andean_strategy_limit-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/TA_BB_RSI_DIVERGENCE-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/TA_Multiframe_AT_TD_best_entry-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/TA_Multiframe_AT_TD_best_entry_limit-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/TA_Multiframe_AT_TD_best_entry_opt_params-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/TA_Multiframe_AT_TD_strategy-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/TA_Multiframe_AT_TD_strategy_limit-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/TA_Multiframe_AT_TD_strategy_opt_params-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/TA_Squeezed_Divergence_strategy_limit-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/TA_TDseq_Ob-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/Test_Gaussian_Regression-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/Test_Gaussian_Regression_v01-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/Test_LSTM-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/Visual_TA_Nexus_momentum-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/Visual_TA_SQUEEZED_MOMENTUM-Copy1-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/Visual_TA_SQUEEZED_MOMENTUM-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/Visual_TA_Sq_mom_divergence_strategy-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/Visual_TA_TSF60_ATR100_VPR_VWMA30-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/capm_fine_research-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/isolated_margin_account-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/kucoin_test-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/margin_account-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/margin_account_light-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/metrics-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/.ipynb_checkpoints/residual_strategy-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/Candles_Strike.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/Comptabilité.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/Comptabilité_Realized_PNL_Kucoin.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/Correlation.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/Fred_Economics.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/Jensen_alpha.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/Order_Book.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/Polynomial.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/Quant_SoftAlpha_Neutral_Universe_Capm_Deployed.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/Quant_SoftAlpha_Neutral_Universe_Capm_all_parameters.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/Quant_SoftAlpha_Neutral_Universe_FilterZscore_000.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/Quant_SoftAlpha_Neutral_Universe_FilterZscore_Optimized.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/Risk_Management.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/TA_AT_SQUEEZED_MOM.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/TA_AT_SQUEEZED_MOM_opt_params.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/TA_Alpha_Trend_Strategy.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/TA_Andean_strategy_limit.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/TA_BB_RSI_DIVERGENCE.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/TA_Multiframe_AT_TD_best_entry.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/TA_Multiframe_AT_TD_best_entry_limit.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/TA_Multiframe_AT_TD_best_entry_opt_params.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/TA_Multiframe_AT_TD_strategy.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/TA_Multiframe_AT_TD_strategy_limit.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/TA_Multiframe_AT_TD_strategy_opt_params.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/TA_Squeezed_Divergence_strategy_limit.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/TA_TDseq_Ob.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/Test_Gaussian_Regression.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/Test_Gaussian_Regression_v01.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/Test_LSTM.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/Visual_TA_Nexus_momentum.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/Visual_TA_SQUEEZED_MOMENTUM-Copy1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/Visual_TA_SQUEEZED_MOMENTUM.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/Visual_TA_Sq_mom_divergence_strategy.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/Visual_TA_TSF60_ATR100_VPR_VWMA30.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/alpha/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/alpha/factorize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/alpha/feature_weights.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/alpha/optimizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/alpha/risk_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/alpha/utils_s.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/capm_fine_research.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/isolated_margin_account.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/keys/key1.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/keys/key2.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/keys/key3.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/keys/key4.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/keys/key5.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/keys/key6.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/keys/key7.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/kucoin_test.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/margin_account.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/margin_account_light.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/metrics.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/modules/.ipynb_checkpoints/functions-checkpoint.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/modules/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/modules/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/modules/db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/modules/execution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/modules/feature_weights.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/modules/functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/modules/pattern_rec_candles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/modules/risk_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/modules/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/parameters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/residual_strategy.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/research/strategies/momentum_1h.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/spark_example.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../train_Dev" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yellow_tripdata/.github/workflows/ci-cd.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yellow_tripdata/.gitlab-ci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yellow_tripdata/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yellow_tripdata/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yellow_tripdata/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yellow_tripdata/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yellow_tripdata/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yellow_tripdata/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yellow_tripdata/.idea/yellow_tripdata.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yellow_tripdata/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yellow_tripdata/Dockerfile.streamlit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yellow_tripdata/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yellow_tripdata/data/yellow_tripdata_2025-01.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yellow_tripdata/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yellow_tripdata/etl_job.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yellow_tripdata/jars/postgresql-42.6.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yellow_tripdata/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yellow_tripdata/tests/test_etl_job.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yellow_tripdata_2025-01.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Synaptik/WebSite/gpt/.idea/gpt.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2zXUMBo9Jc09hcnwXydAgqdWeSH" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/k13104/Desktop/Programming/Test_brazil_v2/airflow/dags",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/airflow/dags" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/airflow/scripts" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Test_brazil_v2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.159" />
+        <option value="bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3fbc356-d263-4028-af04-50ea08129bfa" name="Changes" comment="" />
+      <created>1751876860214</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1751876860214</updated>
+      <workItem from="1751876861278" duration="8608000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

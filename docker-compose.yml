@@ -1,0 +1,50 @@
+version: '3.3'
+
+services:
+
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: olist
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  dbt:
+    image: ghcr.io/dbt-labs/dbt-postgres:1.6.0
+    container_name: dbt
+    volumes:
+      - ./dbt:/usr/app
+    working_dir: /usr/app/your_dbt_project
+    depends_on:
+      - postgres
+    environment:
+      DBT_PROFILES_DIR: /usr/app
+
+  airflow:
+    build: ./airflow
+    container_name: airflow
+    ports:
+      - "8080:8080"
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://admin:admin@postgres:5432/olist
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/scripts:/opt/airflow/scripts
+    depends_on:
+      - postgres
+
+  etl-python:
+    build: ./python_scripts
+    container_name: etl-python
+    volumes:
+      - ./python_scripts:/usr/src/app
+    depends_on:
+      - postgres
+
+volumes:
+  pgdata:

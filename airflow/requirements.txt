@@ -1,0 +1,4 @@
+sqlalchemy
+pandas
+airflow
+psycopg2-binary
