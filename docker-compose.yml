@@ -1,7 +1,4 @@
-version: '3.3'
-
 services:
-
   postgres:
     image: postgres:15
     environment:
@@ -12,39 +9,81 @@ services:
       - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
+      - ./init:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d olist"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
 
   dbt:
     image: ghcr.io/dbt-labs/dbt-postgres:1.6.0
     container_name: dbt
     volumes:
       - ./dbt:/usr/app
-    working_dir: /usr/app/your_dbt_project
+    working_dir: /usr/app
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy
     environment:
       DBT_PROFILES_DIR: /usr/app
 
+  airflow-init:
+    image: apache/airflow:2.7.3
+    entrypoint: bash -c "airflow db migrate && airflow users create \
+      --username admin \
+      --firstname admin \
+      --lastname admin \
+      --role Admin \
+      --email admin@example.com \
+      --password admin"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://admin:admin@postgres:5432/airflow_meta
+      AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: False   # ← unpause at creation
+      AIRFLOW__CORE__LOAD_EXAMPLES: False
+      AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "false"
+      AIRFLOW__WEBSERVER__EXPOSE_HOSTNAME: "false"
+      AIRFLOW__WEBSERVER__EXPOSE_STACKTRACE: "false"
+
   airflow:
     build: ./airflow
+    image: custom-airflow:latest
+    command: [ "standalone" ]
     container_name: airflow
     ports:
       - "8080:8080"
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://admin:admin@postgres:5432/olist
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://admin:admin@postgres:5432/airflow_meta
+      AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: False   # ← unpause at creation
+      AIRFLOW__CORE__LOAD_EXAMPLES: False
+      DATA_DIR: /opt/airflow/data
     volumes:
       - ./airflow/dags:/opt/airflow/dags
       - ./airflow/scripts:/opt/airflow/scripts
+      - ./data:/opt/airflow/data
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
 
   etl-python:
-    build: ./python_scripts
+    build:
+      context: ./python_scripts
+      dockerfile: Dockerfile
+    image: etl-python:latest
     container_name: etl-python
     volumes:
       - ./python_scripts:/usr/src/app
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy
 
 volumes:
   pgdata:

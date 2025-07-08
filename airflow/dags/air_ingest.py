@@ -23,7 +23,7 @@ with DAG(
 
     run_ingest = BashOperator(
         task_id='run_ingest_script',
-        bash_command='python3 ~/Desktop/Programming/Test_brazil/airflow/scripts/ingest_csv_files.py >> /tmp/ingest_log.txt 2>&1',
+        bash_command='python3 /opt/airflow/scripts/ingest_csv_files.py',
         execution_timeout=timedelta(minutes=4),
     )
 

@@ -7,7 +7,7 @@ from sqlalchemy.exc import SADeprecationWarning, OperationalError
 
 warnings.filterwarnings("ignore", category=SADeprecationWarning)
 # Load env vars
-DB_HOST = os.getenv("DB_HOST", "localhost")
+DB_HOST = os.getenv("DB_HOST", "postgres")
 DB_PORT = os.getenv("DB_PORT", "5432")
 DB_NAME = os.getenv("DB_NAME", "olist")
 DB_USER = os.getenv("DB_USER", "admin")
@@ -15,7 +15,7 @@ DB_PASS = os.getenv("DB_PASS", "admin")
 DB_ADMIN_PASS = os.getenv("DB_ADMIN_PASS", "admin")
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-DATA_DIR = os.path.join(BASE_DIR, 'data')
+DATA_DIR = os.path.join(BASE_DIR, '/opt/airflow/data')
 
 CSV_PATHS = {
     'products': (os.path.join(DATA_DIR, 'olist_products_dataset.csv'), 'product_id'),
@@ -41,7 +41,7 @@ def load_data(file_path):
 
 def create_postgres_connection():
     try:
-        engine = create_engine(f"postgresql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}")
+        engine = create_engine(f"postgresql+psycopg2://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}")
         return engine
     except Exception as e:
         print(f"[ERROR] PostgreSQL connection failed: {e}")
@@ -140,8 +140,8 @@ def main():
     print("[INFO] Starting ingestion job...")
 
     engine = create_postgres_connection()
-    ensure_db_exists(db_name='olist')
-    ensure_db_exists(db_name='dash')
+    # ensure_db_exists(db_name='olist')
+    # ensure_db_exists(db_name='dash')
 
     for table, value in CSV_PATHS.items():
         df = load_data(value[0])
@@ -158,6 +158,7 @@ def main():
         else:
             print(f"[WARN] Skipping table {table} due to load failure.")
         print("------------------------------------------")
+    engine.dispose()
 
 if __name__ == "__main__":
     main()
