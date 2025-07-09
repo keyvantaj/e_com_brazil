@@ -1,4 +1,5 @@
-sqlalchemy
-pandas
-airflow
-psycopg2-binary
+sqlalchemy>=1.4.0
+pandas>=2.0.0
+dbt-postgres>=1.6.0
+apache-airflow-providers-docker
+dbt-core==1.6.0

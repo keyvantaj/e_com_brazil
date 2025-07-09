@@ -1,11 +1,14 @@
-your_dbt_project:
+olist:
   target: dev
   outputs:
     dev:
       type: postgres
       host: postgres
-      user: airflow
-      password: airflow
-      dbname: analytics
+      user: admin
+      password: admin
+      port: 5432
+      dbname: olist
       schema: public
-      threads: 1
+      threads: 4
+      keepalives_idle: 0
+      connect_timeout: 10

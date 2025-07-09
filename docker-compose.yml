@@ -4,7 +4,6 @@ services:
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin
-      POSTGRES_DB: olist
     ports:
       - "5432:5432"
     volumes:
@@ -20,16 +19,17 @@ services:
     image: ghcr.io/dbt-labs/dbt-postgres:1.6.0
     container_name: dbt
     volumes:
-      - ./dbt:/usr/app
-    working_dir: /usr/app
+      - ./dbt:/opt/airflow/dbt
+    working_dir: /opt/airflow/dbt
+    environment:
+      DBT_PROFILES_DIR: /opt/airflow/dbt
     depends_on:
       postgres:
         condition: service_healthy
-    environment:
-      DBT_PROFILES_DIR: /usr/app
 
   airflow-init:
     image: apache/airflow:2.7.3
+    build: ./airflow
     entrypoint: bash -c "airflow db migrate && airflow users create \
       --username admin \
       --firstname admin \
@@ -45,13 +45,13 @@ services:
       AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
       AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: False   # ← unpause at creation
       AIRFLOW__CORE__LOAD_EXAMPLES: False
-      AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "false"
-      AIRFLOW__WEBSERVER__EXPOSE_HOSTNAME: "false"
-      AIRFLOW__WEBSERVER__EXPOSE_STACKTRACE: "false"
+      AIRFLOW__WEBSERVER__EXPOSE_CONFIG: False
+      AIRFLOW__WEBSERVER__EXPOSE_HOSTNAME: False
+      AIRFLOW__WEBSERVER__EXPOSE_STACKTRACE: False
 
   airflow:
     build: ./airflow
-    image: custom-airflow:latest
+    image: custom-airflow:dbt
     command: [ "standalone" ]
     container_name: airflow
     ports:
@@ -63,10 +63,24 @@ services:
       AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: False   # ← unpause at creation
       AIRFLOW__CORE__LOAD_EXAMPLES: False
       DATA_DIR: /opt/airflow/data
+
+      DBT_PROFILES_DIR: /opt/airflow/dbt
+      DBT_PROJECT_DIR: /opt/airflow/dbt
+
+      AIRFLOW__EMAIL__EMAIL_BACKEND: airflow.utils.email.send_email_smtp
+      AIRFLOW__SMTP__SMTP_HOST: smtp.gmail.com
+      AIRFLOW__SMTP__SMTP_STARTTLS: True
+      AIRFLOW__SMTP__SMTP_SSL: False
+      AIRFLOW__SMTP__SMTP_PORT: 587
+      AIRFLOW__SMTP__SMTP_MAIL_FROM: keyvan.tajbakhsh@gmail.com
+      AIRFLOW__SMTP__SMTP_USER: keyvan.tajbakhsh@gmail.com
+      AIRFLOW__SMTP__SMTP_PASSWORD: hwln vecu oahx gkkc
     volumes:
       - ./airflow/dags:/opt/airflow/dags
       - ./airflow/scripts:/opt/airflow/scripts
       - ./data:/opt/airflow/data
+      - ./dbt:/opt/airflow/dbt:z
+    user: "50000:0"
     depends_on:
       postgres:
         condition: service_healthy

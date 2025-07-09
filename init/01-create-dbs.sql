@@ -1,0 +1,3 @@
+CREATE DATABASE airflow_meta;
+CREATE DATABASE olist;
+CREATE DATABASE dash;

@@ -1,0 +1,15 @@
+name: 'olist_project'
+version: '1.0'
+profile: 'olist'  # This must match your ~/.dbt/profiles.yml
+
+model-paths: ["models"]
+
+models:
+  olist_project:         # This must match the folder name under models/
+    staging:
+      materialized: view
+    intermediate:
+      materialized: view
+    marts:
+      kpi:
+        materialized: table
