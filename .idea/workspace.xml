@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3fbc356-d263-4028-af04-50ea08129bfa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/airflow/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow/dags/air_ingest.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow/dags/air_ingest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/airflow/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/.~lock.olist_order_payments_dataset.csv#" beforeDir="false" afterPath="$PROJECT_DIR$/data/.~lock.olist_order_payments_dataset.csv#" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/olist_order_payments_dataset.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/olist_order_payments_dataset.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbt/.user.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbt/dbt_project.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbt/models/olist_project/intermediate/int_order_data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbt/models/olist_project/marts/kpi/kpi_gmv.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbt/models/olist_project/src/raw.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbt/models/olist_project/staging/stg_customers.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbt/models/olist_project/staging/stg_order_items.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbt/models/olist_project/staging/stg_orders.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbt/models/olist_project/staging/stg_payments.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbt/profiles.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/01-create-dbs.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/init/01-create-dbs.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/02-dash-schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
