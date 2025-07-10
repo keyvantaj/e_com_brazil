@@ -6,9 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="c3fbc356-d263-4028-af04-50ea08129bfa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/airflow/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/airflow/dags/air_ingest.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow/dags/air_ingest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow/scripts/ingest_csv_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow/scripts/ingest_csv_files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/airflow/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/.~lock.olist_order_payments_dataset.csv#" beforeDir="false" afterPath="$PROJECT_DIR$/data/.~lock.olist_order_payments_dataset.csv#" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/olist_order_payments_dataset.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/olist_order_payments_dataset.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/.user.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/dbt_project.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/models/olist_project/intermediate/int_order_data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/models/olist_project/marts/kpi/kpi_gmv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/models/olist_project/src/raw.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/models/olist_project/staging/stg_customers.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/models/olist_project/staging/stg_order_items.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/models/olist_project/staging/stg_orders.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/models/olist_project/staging/stg_payments.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/profiles.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/01-create-dbs.sql" beforeDir="false" afterPath="$PROJECT_DIR$/postgres/init/01-create-dbs.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/02-dash-schema.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,26 +51,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/k13104/Desktop/Programming/Test_brazil_v2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/k13104/Desktop/Programming/Test_brazil_v2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/airflow/dags" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/postgres" />
       <recent name="$PROJECT_DIR$/airflow/scripts" />
     </key>
   </component>
