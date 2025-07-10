@@ -1,6 +1,6 @@
 # Data Stack Project
 
-Un stack analytique local basé sur Docker : PostgreSQL + dbt + Airflow + Python.
+Un stack analytique local basé sur Docker : PostgreSQL + Airflow + Python.
 
 ## 🚀 Lancer le projet
 
@@ -11,7 +11,6 @@ docker-compose up --build
 ## 📂 Composants
 
 - **PostgreSQL** – base de données analytique
-- **dbt** – transformation des données
 - **Airflow** – orchestration
 - **Python** – scripts ETL
 - **data/** – fichiers sources CSV ou JSON
@@ -21,4 +20,3 @@ docker-compose up --build
 Le fichier `.github/workflows/ci.yml` teste :
 - la connectivité avec PostgreSQL
 - l'exécution du script Python
-- la compilation du projet dbt
