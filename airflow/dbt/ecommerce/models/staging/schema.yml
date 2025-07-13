@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: customers
+
+models:
+  - name: stg_customers
+    description: "Staging customers from raw.customers"
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+      - name: customer_state
+        tests:
+          - not_null

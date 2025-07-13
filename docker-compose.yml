@@ -1,3 +1,4 @@
+
 version: '3.8'
 
 services:
@@ -6,20 +7,26 @@ services:
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin
+      TZ: UTC
     ports:
       - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
       - ./postgres/init:/docker-entrypoint-initdb.d
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U admin -d airflow_meta"]  # Check airflow_meta
+      test: ["CMD-SHELL", "pg_isready -U admin -d airflow_meta"]
       interval: 5s
       timeout: 5s
       retries: 5
 
   airflow-init:
     image: apache/airflow:2.7.3
-    build: ./airflow
+    environment:
+      AIRFLOW__WEBSERVER__SECRET_KEY: "${AIRFLOW_SECRET_KEY}"  # Different from Fernet key
+      AIRFLOW__CORE__FERNET_KEY: "${AIRFLOW_FERNET_KEY}"       # Separate Fernet key
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://admin:admin@postgres:5432/airflow_meta
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      TZ: UTC
     entrypoint: bash -c "airflow db init && airflow users create \
       --username admin \
       --firstname admin \
@@ -30,31 +37,45 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
+
+  airflow-webserver:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile
+    command: webserver
     environment:
+      AIRFLOW__WEBSERVER__SECRET_KEY: "${AIRFLOW_SECRET_KEY}"
+      AIRFLOW__CORE__FERNET_KEY: "${AIRFLOW_FERNET_KEY}"
       AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://admin:admin@postgres:5432/airflow_meta
-      AIRFLOW__CORE__EXECUTOR: LocalExecutor  # Added executor
-      AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
-      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "False"  # Quoted
-      AIRFLOW__CORE__LOAD_EXAMPLES: "False"  # Quoted
-
-  airflow:
-    build: ./airflow
-    image: custom-airflow
-    command: standalone
-    container_name: airflow
-    ports:
-      - "8080:8080"
-    environment:
-      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://admin:admin@postgres:5432/airflow_meta  # Added
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW__WEBSERVER__RBAC: "True"  # Quoted
-      DATA_DIR: /opt/airflow/data
-
+      TZ: UTC
     volumes:
       - ./airflow/dags:/opt/airflow/dags
+      - ./dbt/ecommerce:/opt/airflow/dbt/ecommerce:rw
       - ./airflow/scripts:/opt/airflow/scripts
       - ./data:/opt/airflow/data
-    user: "50000:0"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+      - airflow-init
+
+  airflow-scheduler:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile
+    command: scheduler
+    environment:
+      AIRFLOW__WEBSERVER__SECRET_KEY: "${AIRFLOW_SECRET_KEY}"
+      AIRFLOW__CORE__FERNET_KEY: "${AIRFLOW_FERNET_KEY}"
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://admin:admin@postgres:5432/airflow_meta
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      TZ: UTC
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./dbt/ecommerce:/opt/airflow/dbt/ecommerce:rw
+      - ./airflow/scripts:/opt/airflow/scripts
+      - ./data:/opt/airflow/data
     depends_on:
       postgres:
         condition: service_healthy
