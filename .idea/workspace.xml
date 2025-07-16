@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3fbc356-d263-4028-af04-50ea08129bfa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/airflow/dags/ecom_metrics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/airflow/dbt/dbt_project.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/airflow/dbt/ecommerce/models/staging/schema.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/airflow/dbt/ecommerce/models/staging/stg_customers.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/airflow/dbt/profiles.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/airflow/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/airflow/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/airflow/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow/dags/ecom_metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow/dags/ecom_metrics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow/dbt/dbt_project.yml" beforeDir="false" afterPath="$PROJECT_DIR$/airflow/dbt/dbt_project.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow/dbt/ecommerce/models/staging/schema.yml" beforeDir="false" afterPath="$PROJECT_DIR$/airflow/dbt/models/staging/schema.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow/dbt/ecommerce/models/staging/stg_customers.sql" beforeDir="false" afterPath="$PROJECT_DIR$/airflow/dbt/models/staging/stg_customers.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow/dbt/profiles.yml" beforeDir="false" afterPath="$PROJECT_DIR$/airflow/dbt/profiles.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_scripts/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_scripts/custom_etl.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_scripts/requirements.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +45,8 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/k13104/Desktop/Programming/Test_brazil_ingested_transformed/dbt",
+    "git-widget-placeholder": "origin",
+    "last_opened_file_path": "/home/k13104/Desktop/Programming/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -65,9 +61,9 @@
       <recent name="$PROJECT_DIR$/airflow/dags" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/airflow/dbt" />
       <recent name="$PROJECT_DIR$/airflow/dbt/ecommerce" />
       <recent name="$PROJECT_DIR$/airflow/dbt/models/staging" />
-      <recent name="$PROJECT_DIR$/airflow/dbt" />
       <recent name="$PROJECT_DIR$/airflow" />
       <recent name="$PROJECT_DIR$/dbt" />
     </key>
