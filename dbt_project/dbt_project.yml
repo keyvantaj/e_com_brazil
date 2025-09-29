@@ -1,0 +1,17 @@
+name: 'olist_project'
+version: '1.0.0'
+config-version: 2
+
+profile: 'olist'
+
+model-paths: ["models"]
+
+models:
+  olist_project:
+    staging:
+      +materialized: view
+      +schema: staging
+    marts:
+      sales:
+        +materialized: table
+        +schema: analytics

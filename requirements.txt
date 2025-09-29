@@ -1,0 +1,10 @@
+sqlalchemy>=1.4.0
+pandas>=2.0.0
+cryptography
+streamlit
+psycopg2-binary
+pyspark==3.5.1
+pytest
+coverage
+flake8
+black

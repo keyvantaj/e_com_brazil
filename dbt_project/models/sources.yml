@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: olist
+    schema: public        # schema where your ingestion script loads CSVs
+    database: olist    # your Postgres database name
+
+    tables:
+      - name: products
+      - name: customers
+      - name: order_reviews
+      - name: order_items
+      - name: order_payments
+      - name: sellers

@@ -1,0 +1,12 @@
+olist:
+  target: dev
+  outputs:
+    dev:
+      log-path: /tmp/dbt_logs
+      type: postgres
+      host: postgres        # service name from docker-compose
+      user: admin
+      password: admin
+      port: 5432
+      dbname: olist
+      schema: analytics

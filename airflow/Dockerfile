@@ -1,29 +1,15 @@
-FROM apache/airflow:2.7.3
+FROM apache/airflow:2.7.3-python3.9
+
+# Install dbt (core + postgres adapter) as airflow user
+RUN pip install --user --no-cache-dir dbt-core dbt-postgres
 
 USER root
 
-# 1. Install system dependencies
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-        build-essential \
-        libpq-dev \
-        git \
-        python3-dev \
-    && rm -rf /var/lib/apt/lists/*
-
-COPY requirements.txt /tmp/requirements.txt
-RUN chown airflow: /tmp/requirements.txt
-
-COPY dbt /opt/airflow/dbt
-RUN chown -R airflow: /opt/airflow/dbt
-
-# 4. Set PATH to include system Python binaries
-ENV PATH="/usr/local/bin:${PATH}"
+RUN mkdir -p /opt/airflow/dbt_project/logs && \
+    chown -R 50000:50000 /opt/airflow/dbt_project/logs
+# (Optional) If you need system packages, you can temporarily switch to root
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git \
+    && rm -rf /var/lib/apt/lists/* \
 
 USER airflow
-
-RUN pip install --no-cache-dir -r /tmp/requirements.txt
-
-RUN pip install --no-cache-dir \
-    dbt-core==1.7.0 \
-    dbt-postgres
